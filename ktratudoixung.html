@@ -8,15 +8,18 @@
 </head>
 <body>
     <script>
+        let str = prompt("Nhap chuoi");
+        let len = Math.floor(str.length / 2);
+
         function isPalindrome(str) {
-            var len = Math.floor(str.length / 2);
-            for (var i = 0; i < len; i++)
+            for (var i = 0; i < len; i++) {
                 if (str[i] !== str[str.length - i - 1])
                 return false;
+            } 
             return true;
             }
-        console.log(isPalindrome('test'));
-        console.log(isPalindrome('racecar'));
+        alert(isPalindrome(str));
+        
     </script>
     
 </body>
